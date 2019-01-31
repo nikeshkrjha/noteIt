@@ -1,0 +1,6 @@
+framework module Pods_NoteIt {
+  umbrella header "Pods-NoteIt-umbrella.h"
+
+  export *
+  module * { export * }
+}
