@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoteIt/utils/DateUtils.swift"
-            timestampString = "570642130.6657439"
+            timestampString = "570645457.8367651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -22,16 +22,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NoteIt/ViewControllers/NoteCreatorViewController.swift"
-            timestampString = "570642130.665876"
+            filePath = "NoteIt/DatabaseManager.swift"
+            timestampString = "571054915.979174"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "textViewDidChange(_:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "saveSyncedResponse(dataDict:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoteIt/webApi/ApiHandler.swift"
-            timestampString = "570642130.665942"
+            timestampString = "571054915.979247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "getAllNotes(responseJson:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchAllNotes(responseJson:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NoteIt/viewModels/NotesViewModel.swift"
-            timestampString = "570642143.2780041"
+            filePath = "NoteIt/webApi/ApiHandler.swift"
+            timestampString = "571054915.980046"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getNotes(notesData:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchAllNotes(responseJson:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NoteIt/webApi/ApiHandler.swift"
+            timestampString = "571054915.98027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchAllNotes(responseJson:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

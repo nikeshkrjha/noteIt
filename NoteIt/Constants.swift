@@ -9,7 +9,8 @@
 import UIKit
 
 struct Constants {
-    static let baseURL: String = "http://192.168.31.100:8000/todoapp/api/"
+//    static let baseURL: String = "http://192.168.31.100:8000/todoapp/api/"
+    static let baseURL: String = "http://10.0.2.173:5000/todoapp/api/"
     static let getAllNotes: String = "todos/"
     static let editNote: String = ""
     

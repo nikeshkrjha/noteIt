@@ -16,14 +16,25 @@ public class NotesViewModel {
     }
     
     func getNotes(notesData: @escaping ([Note]?) -> Void = { _ in }) {
-        ApiHandler.getAllNotes { (responseData) in
+        //        ApiHandler.getAllNotes { (responseData) in
+        //            if !responseData!.isEmpty{
+        //                DatabaseManager.sharedInstance.saveSyncedResponse(dataDict: responseData!)
+        //            }
+        //            self.notesArr = Array((DatabaseManager.sharedInstance.realm?.objects(Note.self))! )
+        //            notesData(self.notesArr)
+        //        }
+        
+        ApiHandler.fetchAllNotes { (responseData) in
+            debugPrint(responseData!)
             if !responseData!.isEmpty{
-                DatabaseManager.shareInstance.saveSyncedResponse(dataDict: responseData!)
+                DatabaseManager.sharedInstance.saveSyncedResponse(dataDict: responseData!["data"] as! [String : Any])
             }
-            self.notesArr = Array((DatabaseManager.shareInstance.realm?.objects(Note.self))! )
+            self.notesArr = Array((DatabaseManager.sharedInstance.realm?.objects(Note.self))! )
             notesData(self.notesArr)
         }
+        
     }
+    
     
     
 }

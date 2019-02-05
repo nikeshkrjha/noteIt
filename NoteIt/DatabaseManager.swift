@@ -12,7 +12,7 @@ import RealmSwift
 
 class DatabaseManager {
     var realm: Realm?
-    static let shareInstance: DatabaseManager = DatabaseManager()
+    static let sharedInstance: DatabaseManager = DatabaseManager()
     
     private init(){
         realm = try! Realm()
@@ -25,12 +25,32 @@ class DatabaseManager {
     func saveSyncedResponse(dataDict: [String: Any]){
         print(getRealmPath())
         realm = try! Realm()
-        try! realm?.write {
-            for (key, value) in dataDict{
-                let objects = value as! [AnyObject]
-                let realmObjects = objects.map { Note(value: $0)}
-                realm?.add(realmObjects, update: true)
+        
+        for key in dataDict.keys {
+            switch(key){
+            case "notes":
+                try! realm?.write {
+                    let objects = dataDict[key] as! [AnyObject]
+                    let realmObjects = objects.map { Note(value: $0)}
+                    realm?.add(realmObjects, update: true)
+                }
+                
+            case "categories":
+                try! realm?.write{
+                    let objects = dataDict[key] as! [AnyObject]
+                    let realmObjects = objects.map { Category(value: $0)}
+                    realm?.add(realmObjects, update: true)
+                }
+                
+            default:
+                print("default")
             }
+        }
+    }
+    
+    func deleteNote(note: Note){
+        try! realm?.write {
+            realm?.delete(note)
         }
     }
 }

@@ -18,6 +18,7 @@ class Note: Object {
     @objc dynamic var created_date: String? = ""
     @objc dynamic var updated_date: String? = ""
     @objc dynamic var created_by: Int = 0
+    @objc dynamic var category: Int = 0
     @objc dynamic var uuid = UUID().uuidString
     
     override static func primaryKey() -> String? {

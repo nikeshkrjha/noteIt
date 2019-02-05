@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4962FA0B171E42565DECEA6A /* Pods_NoteIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA6970E23E3126CF1F601E7 /* Pods_NoteIt.framework */; };
+		7329CF612204760F00D422C1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329CF602204760F00D422C1 /* Category.swift */; };
+		7329CF622204760F00D422C1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329CF602204760F00D422C1 /* Category.swift */; };
+		7329CF632204760F00D422C1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329CF602204760F00D422C1 /* Category.swift */; };
+		7329CF642204835000D422C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C921002202F8BE009F3809 /* Assets.xcassets */; };
+		7329CF652204835100D422C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C921002202F8BE009F3809 /* Assets.xcassets */; };
 		73C920FA2202F8BC009F3809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C920F92202F8BC009F3809 /* AppDelegate.swift */; };
 		73C920FC2202F8BC009F3809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C920FB2202F8BC009F3809 /* ViewController.swift */; };
 		73C920FF2202F8BC009F3809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C920FD2202F8BC009F3809 /* Main.storyboard */; };
@@ -76,6 +81,7 @@
 		42BCA069BDD7C2346B40F6FC /* Pods-NoteItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteItTests/Pods-NoteItTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FA6970E23E3126CF1F601E7 /* Pods_NoteIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DB76310123EA266578253 /* Pods-NoteItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteItUITests/Pods-NoteItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7329CF602204760F00D422C1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		73C920F62202F8BC009F3809 /* NoteIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C920F92202F8BC009F3809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73C920FB2202F8BC009F3809 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				73C9212A2202FC68009F3809 /* Note.swift */,
+				7329CF602204760F00D422C1 /* Category.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -384,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7329CF642204835000D422C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7329CF652204835100D422C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +518,7 @@
 				73C9212B2202FC68009F3809 /* Note.swift in Sources */,
 				73F043752203349000CEA4A6 /* Reachability.swift in Sources */,
 				73F043712203298800CEA4A6 /* DateUtils.swift in Sources */,
+				7329CF612204760F00D422C1 /* Category.swift in Sources */,
 				73F043792203501B00CEA4A6 /* TagLabel.swift in Sources */,
 				73E28F6B22032494007B7E2F /* NoteCreatorViewController.swift in Sources */,
 				73E28F5422030522007B7E2F /* Constants.swift in Sources */,
@@ -528,6 +538,7 @@
 				73E28F5A2203066F007B7E2F /* NotesTableViewCell.swift in Sources */,
 				73F04376220334E200CEA4A6 /* Reachability.swift in Sources */,
 				73F0437222032B3600CEA4A6 /* DateUtils.swift in Sources */,
+				7329CF622204760F00D422C1 /* Category.swift in Sources */,
 				73F0437A2203501B00CEA4A6 /* TagLabel.swift in Sources */,
 				73E28F67220308DF007B7E2F /* DatabaseManager.swift in Sources */,
 				73E28F6C22032494007B7E2F /* NoteCreatorViewController.swift in Sources */,
@@ -547,6 +558,7 @@
 				73E28F5B2203066F007B7E2F /* NotesTableViewCell.swift in Sources */,
 				73F04377220334E200CEA4A6 /* Reachability.swift in Sources */,
 				73F0437322032B3700CEA4A6 /* DateUtils.swift in Sources */,
+				7329CF632204760F00D422C1 /* Category.swift in Sources */,
 				73F0437B2203501B00CEA4A6 /* TagLabel.swift in Sources */,
 				73E28F68220308DF007B7E2F /* DatabaseManager.swift in Sources */,
 				73E28F6D22032494007B7E2F /* NoteCreatorViewController.swift in Sources */,
